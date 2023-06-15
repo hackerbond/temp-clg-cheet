@@ -1,0 +1,1045 @@
+Presidency University would like to present its gesture to the visitors by displaying a welcome message to the visitors entering to the campus by taking the name of the visitor at the campus entrance. Help the presidency university by writing an application in java to perform the same.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args)
+ {
+	    
+	    Scanner input=new Scanner(System.in);
+	    
+	    System.out.println("enter the name of the visitor");
+	    String name=input.nextLine();
+	    System.out.println("Welcome" + name + ”to presidency university”);
+}
+}
+
+
+
+
+2 Accept the length of two different line segments and check whether they are equal or unequal. Display the message accordingly
+import java.util.Scanner;
+public class course
+{
+    public static void main(String[] args)
+    {
+        int avrg,sum;
+        Scanner input=new Scanner(System.in);
+        System.out.println("kindly enter the values for two line segments");
+        int a = input.nextInt();
+        int b = input.nextInt();
+        if(a==b)
+System.out.println(“Line segments are equal”);
+else
+
+System.out.println(“Line segments are not equal”);
+}
+}
+
+
+
+3. Accept three numbers and check whether they are 'Pythagorean Triplets' or not. Display the message accordingly. (Hint: Use Pythagoras Formula for a Right-angled Triangle: H 2 = P 2+B2 )
+
+
+
+4. Raju has appeared for an assessment in 3 different courses. The faculty advisor of Raju would like to know the following: 
+a) The total marks obtained by Raju in all the 3 courses provided the assessment score of each course should be less than or equal 20 marks otherwise it should report as error in marks assignment 
+
+b) The average marks obtained by Raju. 
+
+Requirements: 
+a) The individual marks scored by Raju has to be captured for all the 3 courses 
+b) The total and average mark has to be displayed
+
+import java.util.Scanner;
+public class course
+{
+    public static void main(String[] args)
+    {
+        int avrg,sum;
+        Scanner input=new Scanner(System.in);
+        System.out.println("kindly enter your marks in 3 subjects");
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
+        if((a>=20)||(b>=20)||(c>=20))
+        {
+            System.out.println("error in mark assignment");
+        }
+        else
+        {
+            sum=a+b+c;
+            avrg=((a+b+c)/3);
+	System.out.println("the total marks"+sum);
+            System.out.println("the average three subjects marks is"+avrg);
+        }
+    }
+}
+
+
+
+Q5. In an Examination Hall student of second year and third year students sits in an odd and even number positions consecutively. Then a teacher asks one of the students to find the sum of even and odd positions separately. The total seating capacity of an exam hall is 100. Develop a software application to perform the above operations.
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i,odd_sum=0,even_sum=0; 
+        for(i=0;i<=20;i++)//i=i+1=1
+        	{
+          if((i%2)==0 )  //1!=0       
+	{
+              even_sum=even_sum+i;
+            }
+
+            else
+            odd_sum=odd_sum+i;
+        }
+        System.out.println("the even_sum is"+even_sum);
+        System.out.println("the odd_sum is"+odd_sum);
+    }
+}
+
+
+
+
+
+6. A Teacher asks one of the students in a class to do the arithmetic operations based on a choice with the menu driven operation. Here at a time, student have been restricted to perform one arithmetic operation only. Help the student to perform the above operations. 
+Requirements:
+ a) Display the Menu of Arithmetic operations
+ b) Capture the user choice on the operations 
+ c) Capture the user inputs for the operation
+ d) Perform the operation based on the user choice
+ e) Display the result to the console.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=10,b=20,c=0;
+        Scanner input= new Scanner(System.in);
+        System.out.println("Enter your choice 1:Add 2:sub 3:mul 4:div");
+        int choice= input.nextInt();
+        switch(choice)
+        {
+            case 1:c=a+b;
+                   System.out.println("Addition is:"+c);
+                   break;
+            case 2:c=a-b;
+                   System.out.println("Subtraction is:"+c);
+                   break;
+            case 3:c=a*b;
+                   System.out.println("Multiplication is:"+c);
+                   break;
+            case 4:c=a/b;
+                   System.out.println("Division is:"+c);
+                   break;
+
+            default:
+                    System.out.println("invalid option");
+                    
+         }
+    }
+}
+
+
+
+
+7. Input the quantity purchased and the rate. Calculate the total purchase price and display it along with the gift to be presented. The gifts to the customers are given as under: Amount of Purchase (Rs.) Gift 100 and above but less than 500 A key ring 500 and above but less than 1000 A leather purse 1000 and above A pocket calculator The application will end with a 'Thank you' message.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args)
+ {
+	    
+	    Scanner input=new Scanner(System.in);
+	    
+	    System.out.println("enter the item number");
+	    int itmno = input.nextInt();
+                System.out.println("enter the quantity purchased");
+	    int qty = input.nextInt();
+	    System.out.println("enter the rate");
+	    int rate = input.nextInt();
+        int tp = qty*rate;
+        System.out.println();
+        System.out.println("Item number: "+itmno);
+        System.out.println("Total cost: "+tp);
+    
+    if (tp >=100 && tp<500)
+    {
+     System.out.println("Congratulations! You get a free Key Ring!");
+    }
+    else if(tp >=500 && tp<1000)
+    {
+       System.out.println("Congratulations! You get a free Leather Purse!");
+    }
+    else if(tp >=1000)
+	{
+        System.out.println("Congratulations! You get a free Pocket Calculator!");
+	}
+	System.out.println("THANK YOU");
+   }
+}
+
+
+
+
+
+Write a java program for the below problems using command line arguments: 
+
+1. Read an integer, a double, and a String from stdin, then print the values according to the instructions in the Output Format section below.
+Requirement: 
+Input Format 
+There are three lines of input: 
+a) The first line contains an integer. 
+b) The second line contains a double.
+ c) The third line contains a String. 
+Output Format 
+There are three lines of output:
+ a) On the first line, print String: followed by the unaltered String read from stdin.
+ b) On the second line, print Double: followed by the unaltered double read from stdin.
+ c) On the third line, print Int: followed by the unaltered integer read from stdin. 
+Sample Input 
+42 
+3.1415 
+Welcome
+Sample Output
+ String: Welcome
+ Double: 3.1415
+ Int: 42
+
+Sol:     public class cmd1 {
+
+	public static void main(String[] args) {
+	
+	int x=Integer.parseInt(args[0]); //converts string to integer
+
+	double y=Double.parseDouble(args[1]);
+	String s=args[2]; 
+	System.out.println("String: "+s);
+	System.out.println("Double: "+y);
+	System.out.println("Int: "+x);
+	}
+}
+
+
+
+
+2. Ms. Sharada went to participate a coding contest and she has been assigned to generate the different patterns using asterisk symbol(*) one among them is to generate Diamond Shape Pattern for given number as shown below: 
+Sample input: if n = 4 
+Sample output:
+    * 
+  ***
+ *****
+ ******* 
+***** 
+   ***
+     * 
+Requirement: 
+a) The number of rows the pattern is to be printed has to be captured 
+b) Using control statements generate the pattern
+
+Sol. 
+public class cmd2
+{
+
+public static void main(String[] args)
+{
+
+	int n,c, k, space = 1;
+	n=Integer.parseInt(args[0]); //converts string to integer//n=2
+	System.out.println();
+	space = n-1;
+
+	for (k = 1; k <= n; k++)
+	{
+		for (c = 1; c <= space; c++)
+			System.out.print(" ");
+		space--;
+		for (c = 1; c <= 2*k-1; c++)
+			System.out.print("*");
+		System.out.print("\n");
+	}	
+	space = 1;
+
+	for (k = 1; k <= n-1; k++)
+	{
+		for (c = 1; c <= space; c++)
+			System.out.print(" ");
+		space++;
+		for (c = 1 ; c <= 2*(n-k)-1; c++)
+			System.out.print("*");
+		System.out.print("\n");
+	}	
+
+	}
+}   
+
+	class student
+{
+String name;
+String rollno;
+String branch;
+String sem;
+void read(String nam,String Roll,String bran,String se)
+{
+name=nam;
+rollno=Roll;
+branch=bran;
+sem=se;
+}
+void read()
+{
+Scanner obj=new Scanner(System.in);
+System.out.println("Enter the values for name,roll number,branch,sem");
+name=obj.nextLine();
+rollno=obj.nextLine();
+branch=obj.nextLine();
+sem=obj.nextLine();
+}
+void display()
+{
+System.out.println(name+rollno+branch+sem);
+}
+}
+class ST
+{
+public static void main(String args[])
+{
+student obj=new student();
+obj.read(args[0],args[1],args[2],args[3]);
+obj.display();
+student S1=new student();
+obj.read();
+obj.display();
+student S2=new student();
+obj.read();
+obj.display();
+student S3=new student();
+obj.read();
+obj.display();
+}}
+javac ST.java
+java ST akshitha 20221cse0203 COM 2
+Enter the values for name,roll number,branch,sem
+ndajgf
+2233
+cse
+5
+
+
+
+Labsheet 2
+
+1.A teacher asked the class leader to prepare the list of student details (name, roll number, Branch and Sem) of his section by using read method and also to display the details of the students using java program. Q1 Demonstrate the application by creating, reading and displaying the one student of the section using Command Line Arguments. Q2 Demonstrate the application by creating, reading and displaying the three students of the section using Scanner class.
+public class Student {
+   String name;
+   int rollNumber;
+   String branch;
+   int semester;
+ 
+   public Student(String name, int rollNumber, String branch, int semester) {
+      this.name = name;
+      this.rollNumber = rollNumber;
+      this.branch = branch;
+      this.semester = semester;
+   }
+ 
+   public void display() {
+      System.out.println("Name: " + name);
+      System.out.println("Roll Number: " + rollNumber);
+      System.out.println("Branch: " + branch);
+      System.out.println("Semester: " + semester);
+   }
+ 
+   public static void main(String[] args) {
+      String name = args[0];
+      int rollNumber = Integer.parseInt(args[1]);
+      String branch = args[2];
+      int semester = Integer.parseInt(args[3]);
+ 
+      Student student = new Student(name, rollNumber, branch, semester);
+      student.display();
+   }
+}
+
+Scanner class
+import java.util.Scanner;
+
+public class Student {
+   String name;
+   int rollNumber;
+   String branch;
+   int semester;
+ 
+   public Student(String name, int rollNumber, String branch, int semester) {
+      this.name = name;
+      this.rollNumber = rollNumber;
+      this.branch = branch;
+      this.semester = semester;
+   }
+ 
+   public void display() {
+      System.out.println("Name: " + name);
+      System.out.println("Roll Number: " + rollNumber);
+      System.out.println("Branch: " + branch);
+      System.out.println("Semester: " + semester);
+   }
+ 
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      for(int i=1; i<=3; i++){
+        System.out.println("Enter name: ");
+        String name = scanner.next();
+        System.out.println("Enter roll number: ");
+        int rollNumber = scanner.nextInt();
+        System.out.println("Enter branch: ");
+        String branch = scanner.next();
+        System.out.println("Enter semester: ");
+        int semester = scanner.nextInt();
+
+        Student student = new Student(name, rollNumber, branch, semester);
+        student.display();
+      }
+   }
+}
+
+
+
+
+
+2.A teacher gave a project to student in the classroom to find the area of different shapes. A student has to find the area of different shapes based on the choice of different parameters using overloading and display the results.
+import java.util.Scanner;
+
+public class AreaCalculator {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int choice = 0;
+        while (choice != 4) {
+            System.out.println("Enter the shape you want to find the area of:");
+            System.out.println("1. Circle");
+            System.out.println("2. Rectangle");
+            System.out.println("3. Triangle");
+            System.out.println("4. Exit");
+            choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter the radius of the circle: ");
+                    double radius = scanner.nextDouble();
+                    System.out.println("Area of the circle: " + area(radius));
+                    break;
+                case 2:
+                    System.out.print("Enter the length of the rectangle: ");
+                    double length = scanner.nextDouble();
+                    System.out.print("Enter the width of the rectangle: ");
+                    double width = scanner.nextDouble();
+                    System.out.println("Area of the rectangle: " + area(length, width));
+                    break;
+                case 3:
+                    System.out.print("Enter the base of the triangle: ");
+                    double base = scanner.nextDouble();
+                    System.out.print("Enter the height of the triangle: ");
+                    double height = scanner.nextDouble();
+                    System.out.println("Area of the triangle: " + area(base, height));
+                    break;
+                case 4:
+                    System.out.println("Exiting program...");
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
+                    break;
+            }
+        }
+    }
+    
+    public static double area(double radius) {
+        return Math.PI * radius * radius;
+    }
+    
+    public static double area(double length, double width) {
+        return length * width;
+    }
+    
+    public static double area(double base, double height) {
+        return 0.5 * base * height;
+    }
+    
+}
+
+
+
+3.Four employees decided to celebrate their manager’s birthday. Everyone contributed minimum of 500 rupees. Employee 1 and Employee 3 contributed the same amount. 25% of amount is spent on cake, 25% of amount is spent on gift and 50% of money is spent on food. One of the employees explained the plan and action of the event by explaining the following to his/her team.   a)  Every employee contribution and who has contributed the highest.  b)  Amount spent on each item.  Help an employee by using constructor overloading, static variable and static function to demonstrate the same.
+public class BirthdayCelebration {
+    private int contribution;
+    private static int totalContribution;
+    private static int highestContribution=0;
+
+    public BirthdayCelebration(int contribution) {
+        this.contribution = contribution;
+     }
+    public BirthdayCelebration(int c1, int c2, int c3, int c4) {
+        totalContribution = c1 + c2 + c3 + c4;
+        if (c1 > highestContribution) {
+            highestContribution = c1;
+        }
+        if (c2 > highestContribution) {
+            highestContribution = c2;
+        }
+        if (c3 > highestContribution) {
+            highestContribution = c3;
+        }
+        if (c4 > highestContribution) {
+            highestContribution = c4;
+        }
+    }
+    public static void calculateAmountsSpent() {
+        int cakeAmount = totalContribution*0.25;
+        int giftAmount = totalContribution*0.25;
+        int foodAmount = totalContribution*0.5;
+        System.out.println("Amount spent on cake: " + cakeAmount);
+        System.out.println("Amount spent on gift: " + giftAmount);
+        System.out.println("Amount spent on food: " + foodAmount);
+    }
+    public static void main(String[] args) {
+        BirthdayCelebration employee1 = new BirthdayCelebration(500);
+        BirthdayCelebration employee2 = new BirthdayCelebration(600);
+        BirthdayCelebration employee3 = new BirthdayCelebration(500);
+        BirthdayCelebration employee4 = new BirthdayCelebration(700);
+        BirthdayCelebration event = new BirthdayCelebration(employee1.contribution,
+                employee2.contribution,
+                employee3.contribution,
+                employee4.contribution);
+
+        System.out.println("Employee 1 contribution: " + employee1.contribution);
+        System.out.println("Employee 2 contribution: " + employee2.contribution);
+        System.out.println("Employee 3 contribution: " + employee3.contribution);
+        System.out.println("Employee 4 contribution: " + employee4.contribution);
+        System.out.println("Highest contribution: " + highestContribution);
+
+        BirthdayCelebration.calculateAmountsSpent();
+    }
+}
+
+
+
+4. Develop a java program with two classes an Outer and Inner class. Each of the class have one data member, the inner class has member function which displays the data members. Demonstrate program to access of both inner and outer inner members.
+// Outer class
+class Outer {
+    private int outerData;
+
+    // Inner class
+    class Inner {
+        private int innerData;
+
+        public void displayData() {
+            System.out.println("Outer data: " + outerData);
+            System.out.println("Inner data: " + innerData);
+        }
+    }
+
+    public Outer(int outerData, int innerData) {
+        this.outerData = outerData;
+        // Create an instance of the inner class and set its data member
+        Inner inner = new Inner();
+        inner.innerData = innerData;
+        // Call the inner class's method to display both data members
+        inner.displayData();
+    }
+}
+public class DemoInnerClass {
+    public static void main(String[] args) {
+        // Create an instance of the outer class
+        Outer outer = new Outer(10, 20);
+        // Create an instance of the inner class using the outer class's reference
+        Outer.Inner inner = outer.new Inner();
+        // Set the inner class's data member
+        inner.innerData = 30;
+        // Call the inner class's method to display both data members
+        inner.displayData();
+    }
+}
+LAbsheet 3 solutions
+
+1) The Linear search or Sequential search is a method to find an element within a given array/List.
+Steps to be followed:
+a. Take the Search element from user
+b. Compare the search element to every element of an array starting from first element
+to till the end of the array.
+c. If the element if found display its position with suitable message
+d. Else display the unsuccessful message.
+
+import java.util.Scanner;
+public class LinearSearch {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Step 1: Take the search element from the user
+        System.out.print("Enter the element to search: ");
+        int searchElement = input.nextInt();
+
+        // Sample array for demonstration
+        int[] array = {3, 4, 1, 7, 2, 9, 5};
+
+        // Step 2: Compare the search element with each element of the array
+        int position = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == searchElement) {
+                position = i;
+                break;
+            }
+        }
+
+        // Step 3: Display the position of the element (if found) or an unsuccessful message
+        if (position != -1) {
+            System.out.printf("%d found at position %d.", searchElement, position+1);
+        } else {
+            System.out.printf("%d not found in the given array.", searchElement);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+2. Mr.John has joined the CGI Company as Database Administrator and his major role is to maintain the Employee database which includes Employee Id, Employee Name, Age and Employee Salary. The criteria for maintaining is that, he need to store all the records in one single table. How the John is going to access all the records which he has stored?
+Solution:
+import java.util.Scanner;
+
+    class Employee
+    {
+        int Id;
+        String Name;
+        int Age;
+        long Salary;
+
+        void GetData()           // Defining GetData()
+        {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("\n\tEnter Employee Id : ");
+            Id = sc.nextInt();
+            System.out.print("\n\tEnter Employee Name : ");
+            Name = sc.next();
+            System.out.print("\n\tEnter Employee Age : ");
+            Age = sc.nextInt();
+            System.out.print("\n\tEnter Employee Salary : ");
+            Salary = sc.nextLong();
+        }
+
+        void PutData()           // Defining PutData()
+        {
+            System.out.print("\n\t" + Id + "\t" +Name + "\t" +Age + "\t" +Salary);
+        }
+        public static void main(String args[])
+        {
+            Employee[] Emp = new Employee[3];
+            int i;
+            for(i=0;i<3;i++)
+                Emp[i] =  new Employee();   // Allocating memory to each object
+            for(i=0;i<3;i++)
+            {
+                System.out.print("\nEnter details of "+ (i+1) +" Employee\n");
+                Emp[i].GetData();
+            }
+            System.out.print("\nDetails of Employees\n");
+            for(i=0;i<3;i++)
+                Emp[i].PutData();
+        }
+    }
+
+Output:
+Enter details of 1 Employee
+
+	Enter Employee Id : 34
+
+	Enter Employee Name : Geetha
+
+	Enter Employee Age : 23
+
+	Enter Employee Salary : 45000
+
+Enter details of 2 Employee
+
+	Enter Employee Id : 35
+
+	Enter Employee Name : Seetha
+
+	Enter Employee Age : 24
+
+	Enter Employee Salary : 50000
+
+Enter details of 3 Employee
+
+	Enter Employee Id : 25
+
+	Enter Employee Name : Vineetha
+
+	Enter Employee Age : 28
+
+	Enter Employee Salary : 55000
+Output:
+Details of Employees
+
+	34	Geetha	23	45000
+	35	Seetha	24	50000
+	25	Vineetha28	55000
+
+3. There are many companies advertises their brand by sponsoring on sports events like T-shirts to players, the equipment’s needed to play the game and so on. Likewise, the two softball teams submitted their equipment lists to their sponsors. The equipment lists, its costs for Team A and Team B are as follows. As a programmer help the sponsors to calculate the total cost of the equipment’s for each team they are spending for their branding.
+
+class sports
+{
+Int Balls,Bats,Gloves,BallCost,Batcost,Glovescost;
+sports(int Ball, int Bat, int Glove,int Ballcost, int Batcost, int Glovescost)
+{
+Balls=Ball;
+Bats=Bat;
+Gloves=Glove;
+this.Ballcost=Ballcost;
+this.Batcost=Batcost;
+this.Glovescost=Glovescost;
+}
+void TeamA()
+{
+Int totalcost=Balls* BallCost+ Bats* Batcost+ Gloves* Glovescost;
+System.out.println(“Total Equipment cost for Team A is:”+totalcost);
+}
+void TeamB()
+{
+Int totalcost=Balls* BallCost+ Bats* Batcost+ Gloves* Glovescost;
+System.out.println(“Total Equipment cost for Team B is:”+totalcost);
+}
+public static void main(String args[])
+{
+sports team_A=new sports(12,45,15,9,80,60);
+sports team_B=new sports(15,38,17,9,80,60);
+team_A.TeamA();
+team_B.TeamB();
+
+}
+}
+4 Create two Strings str1 and str2, using String functions find the a. Character at index 5 for str1 b. Check if the str2 starts with “k” c. Find the length of str1 and str2 d. Find if str1 and str2 are equal e. Find the substring of str1 for index 1:4 f. Create a character array called dst, store dst[0]=’a’ and dst[1]=’b’ respectively and display it. g. Use getchars function to add characters to a character array dst and display it. h. Concatenate str2 with presidency University
+
+public class StringFunctions {
+   public static void main(String[] args) {
+      // Initialize strings
+      String str1 = "Hello, world!";
+      String str2 = "kotlin is a great language";
+
+      // a. Character at index 5 for str1
+      char ch = str1.charAt(5);
+      System.out.println("Character at index 5 of str1: " + ch);
+
+      // b. Check if the str2 starts with "k"
+      boolean startsWithK = str2.startsWith("k");
+      System.out.println("Does str2 start with 'k'? " + startsWithK);
+
+      // c. Find the length of str1 and str2
+      int len1 = str1.length();
+      int len2 = str2.length();
+      System.out.println("Length of str1: " + len1);
+      System.out.println("Length of str2: " + len2);
+
+      // d. Find if str1 and str2 are equal
+      boolean isEqual = str1.equals(str2);
+      System.out.println("Are str1 and str2 equal? " + isEqual);
+
+      // e. Find the substring of str1 for index 1:4
+      String subStr1 = str1.substring(1, 4);
+      System.out.println("Substring of str1 from index 1 to 4: " + subStr1);
+
+      // f. Create a character array called dst, store dst[0]='a' and dst[1]='b' respectively and display it.
+      char[] dst = new char[2];
+      dst[0] = 'a';
+      dst[1] = 'b';
+      System.out.println("Character array dst: " + new String(dst));
+
+  // g. Use getchars function to add characters to a character array dst and display it.
+      str1.getChars(0, 5, dst, 0);
+      System.out.println("Character array dst after getChars: " + new String(dst));
+
+      // h. Concatenate str2 with "Presidency University" and display it
+      String concatStr = str2.concat(" Presidency University");
+      System.out.println("Concatenated string: " + concatStr);
+   }
+}
+5.Create a String “ScienceTechnology” using StringBuffer, Perform the following operations a. insert string “for” at location 7 b. insert 0 at location 2 c. insert “true” at location 3 d. insert a character array
+
+public class StringBufferExample {
+    public static void main(String[] args) {
+        // Create a StringBuffer object
+        StringBuffer sb = new StringBuffer("ScienceTechnology");
+
+        // Insert string "for" at location 7
+        sb.insert(7, "for ");
+
+        // Insert 0 at location 2
+        sb.insert(2, 0);
+
+        // Insert "true" at location 3
+        sb.insert(3, "true");
+
+        // Create a character array
+        char[] chars = {'j', 'a', 'v', 'a'};
+
+        // Insert the character array at location 10
+        sb.insert(10, chars);
+
+        // Print the final string
+        System.out.println(sb.toString());
+    }
+}
+
+6. In this modern era, naming the child passionately becoming common, like keeping the child name as a combination of the child’s mother and father’s names. Think you as application developer having interest in building such applications which takes the names of the father and mother and suggest the Name of the child by combining the names of the parents.
+import java.util.Scanner;
+
+public class BabyNameGenerator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the names of the father and mother from the user
+        System.out.print("Enter the name of the father: ");
+        String fatherName = scanner.nextLine();
+
+        System.out.print("Enter the name of the mother: ");
+        String motherName = scanner.nextLine();
+
+        // Generate the name of the child
+        String childName = fatherName.substring(0, 3) + motherName.substring(motherName.length() - 3);
+
+        // Print the name of the child
+        System.out.println("The suggested name for the child is: " + childName);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Labsheet 4 solutions
+1.A customer on e-commerce ordered a product online by giving both his/her company and home address. The e-commerce site has maintained both the addresses entered by a customer. When a product has to be delivered the delivery boy working for e-commerce wants to know the address to deliver the product. Thus, the delivery boy wants to access both the address from his portal but there is only one column. Help him to access both addresses without override the values.
+
+import java.util.Scanner;
+
+public class AddressStorage {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the addresses from the user
+        System.out.print("Enter the company address: ");
+        String companyAddress = scanner.nextLine();
+
+        System.out.print("Enter the home address: ");
+        String homeAddress = scanner.nextLine();
+
+        // Combine the addresses with a delimiter character
+        String combinedAddress = companyAddress + "|" + homeAddress;
+
+        // Print the combined address
+        System.out.println("Combined address: " + combinedAddress);
+
+        // Split the combined address and retrieve the individual addresses
+        String[] addresses = combinedAddress.split("\\|");
+        String retrievedCompanyAddress = addresses[0];
+        String retrievedHomeAddress = addresses[1];
+
+        // Print the retrieved addresses
+        System.out.println("Retrieved company address: " + retrievedCompanyAddress);
+        System.out.println("Retrieved home address: " + retrievedHomeAddress);
+    }
+}
+2.Define an Employee class with suitable attributes having getSalary() method, which returns the salary withdrawn by a particular employee. Write a class Manager which extends a class Employee, override the getSalary() method, which will return salary of the manager by adding traveling _allowance, house rent allowance etc.
+class Employee {
+    private String name;
+    private int salary;
+
+    public Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+}
+
+class Manager extends Employee {
+    private int travelAllowance;
+    private int houseRentAllowance;
+
+    public Manager(String name, int salary, int travelAllowance, int houseRentAllowance) {
+        super(name, salary);
+        this.travelAllowance = travelAllowance;
+        this.houseRentAllowance = houseRentAllowance;
+    }
+
+    @Override
+    public int getSalary() {
+        return super.getSalary() + travelAllowance + houseRentAllowance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // create an Employee object
+        Employee emp = new Employee("John Doe", 50000);
+
+        // get the salary of the Employee
+        System.out.println("Employee Salary: " + emp.getSalary());
+
+        // create a Manager object
+        Manager mgr = new Manager("Jane Doe", 80000, 10000, 20000);
+
+        // get the salary of the Manager
+        System.out.println("Manager Salary: " + mgr.getSalary());
+    }
+}
+
+3.Make a class Student. The Student class has data members such as Roll Number, Name and Branch. Create a class called Exam that has 6 subject marks as data members. Derive Result class from Student and Exam classes and it has its own data members such as total mark and result. Write the JAVA program to model the relationship (Use Multilevel Inheritance).
+
+class Student {
+    int rollNumber;
+    String name;
+    String branch;
+}
+
+class Exam extends Student {
+    int subject1, subject2, subject3, subject4, subject5, subject6;
+}
+
+class Result extends Exam {
+    int totalMarks;
+    String result;
+    
+    void calculateResult() {
+        totalMarks = subject1 + subject2 + subject3 + subject4 + subject5 + subject6;
+        if (totalMarks >= 240) {
+            result = "Pass";
+        } else {
+            result = "Fail";
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Result r = new Result();
+        r.rollNumber = 123;
+        r.name = "John";
+        r.branch = "Computer Science";
+        r.subject1 = 70;
+        r.subject2 = 80;
+        r.subject3 = 90;
+        r.subject4 = 85;
+        r.subject5 = 75;
+        r.subject6 = 80;
+        r.calculateResult();
+        System.out.println("Roll Number: " + r.rollNumber);
+        System.out.println("Name: " + r.name);
+        System.out.println("Branch: " + r.branch);
+        System.out.println("Total Marks: " + r.totalMarks);
+        System.out.println("Result: " + r.result);
+    }
+}
+
+LAbsheet 5
+1. Define an interface "Area" which should contain a method named area (); Implement this interface in rectangle & triangle classes to find their area. Demonstrate the above implementation by writing a main method in a new class called "DemoInterfaceArea".
+interface Area {
+    double area();
+}
+
+class Rectangle implements Area {
+    private double length;
+    private double breadth;
+
+    public Rectangle(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public double area() {
+        return length * breadth;
+    }
+}
+
+class Triangle implements Area {
+    private double base;
+    private double height;
+
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    public double area() {
+        return 0.5 * base * height;
+    }
+}
+
+public class DemoInterfaceArea {
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle(10, 20);
+        System.out.println("Area of rectangle: " + rectangle.area());
+
+        Triangle triangle = new Triangle(5, 10);
+        System.out.println("Area of triangle: " + triangle.area());
+    }
+}
+
+2.Shyam’s teacher asked him to submit an assignment on division of integers, he wrote a java program to complete the assignment, his program abruptly ended at a condition. Identify the condition where Shyam’s program abruptly ended and handle the condition using suitable measures. Requirements: 
+a) The quantity and price per item has to be captured 
+b) The bill has to be computed using the above formula 
+c) Bill has to displayed.
+import java.util.Scanner;
+
+public class BillCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Capture the quantity and price per item
+        System.out.print("Enter the quantity: ");
+        int quantity = input.nextInt();
+
+        System.out.print("Enter the price per item: ");
+        double pricePerItem = input.nextDouble();
+
+        // Compute the bill
+        double bill;
+        if (pricePerItem != 0) {
+            bill = quantity * pricePerItem;
+        } else {
+            System.out.println("Price per item cannot be 0.");
+            return;
+        }
+
+        // Display the bill
+        System.out.println("Bill: " + bill);
+    }
+}
+
+
+
+
+
